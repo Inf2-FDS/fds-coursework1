@@ -1,0 +1,51 @@
+air_reserve.csv
+
+This file contains reservations made in the air system. Note that the reserve_datetime indicates the time when the reservation was created, whereas the visit_datetime is the time in the future where the visit will occur.
+
+air_store_id - the restaurant's id in the air system
+visit_datetime - the time of the reservation
+reserve_datetime - the time the reservation was made
+reserve_visitors - the number of visitors for that reservation
+_____________________________
+hpg_reserve.csv
+
+This file contains reservations made in the hpg system.
+
+hpg_store_id - the restaurant's id in the hpg system
+visit_datetime - the time of the reservation
+reserve_datetime - the time the reservation was made
+reserve_visitors - the number of visitors for that reservation
+_____________________________
+air_store_info.csv
+This file contains information about select air restaurants. Column names and contents are self-explanatory.
+
+air_store_id
+air_genre_name
+air_area_name
+latitude
+longitude
+Note: latitude and longitude are the latitude and longitude of the area to which the store belongs
+_____________________________
+air_visit_data.csv
+This file contains historical visit data for the air restaurants.
+
+air_store_id
+visit_date - the date
+visitors - the number of visitors to the restaurant on the date
+_____________________________
+hpg_store_info.csv
+This file contains information about select hpg restaurants. Column names and contents are self-explanatory.
+
+hpg_store_id
+hpg_genre_name
+hpg_area_name
+latitude
+longitude
+Note: latitude and longitude are the latitude and longitude of the area to which the store belongs
+_____________________________
+store_id_relation.csv
+
+This file allows you to join select restaurants that have both the air and hpg system.
+
+hpg_store_id
+air_store_id
